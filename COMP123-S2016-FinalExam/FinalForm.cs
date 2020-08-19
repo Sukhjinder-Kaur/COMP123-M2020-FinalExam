@@ -38,5 +38,22 @@ namespace COMP123_M2020_FinalExam
         {
             Application.Exit();
         }
+    /// <summary>
+    /// FinalForm_Load event handler loads the textboxes values to the respective text boxes from program.character object
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void FinalForm_Load(object sender, EventArgs e)
+    {
+      StrengthTextBox.Text = Program.character.Strength;
+      DexterityTextBox.Text = Program.character.Dexterity;
+      ConstitutionTextBox.Text = Program.character.Constitution;
+      IntelligenceTextBox.Text = Program.character.Intelligence;
+      WisdomTextBox.Text = Program.character.Wisdom;
+      CharismaTextBox.Text = Program.character.Charisma;
+      RaceTextBox.Text = Program.character.Race;
+      FirstNameTestBox.Text = Program.character.FirstName;
+      LastNameTextBox.Text = Program.character.LastName;
     }
+  }
 }

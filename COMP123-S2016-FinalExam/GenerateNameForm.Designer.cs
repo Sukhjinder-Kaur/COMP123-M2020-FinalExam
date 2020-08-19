@@ -258,7 +258,7 @@
       // NextButton
       // 
       this.NextButton.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.NextButton.Location = new System.Drawing.Point(568, 660);
+      this.NextButton.Location = new System.Drawing.Point(546, 632);
       this.NextButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
       this.NextButton.Name = "NextButton";
       this.NextButton.Size = new System.Drawing.Size(170, 62);

@@ -6,7 +6,11 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*FileName: AboutBox.cs
+Author's name: Sukhjinder Kaur
+StudentID : 301087895 
+Changes Made :Added a different picture
+*/
 namespace COMP123_M2020_FinalExam
 {
   partial class AboutBox : Form

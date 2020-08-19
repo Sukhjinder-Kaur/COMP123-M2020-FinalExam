@@ -7,6 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+/*FileName: FinalForm.cs
+Author's name: Sukhjinder Kaur
+StudentID : 301087895 
+Changes Made : Added FinalForm load event handler
+*/
 
 namespace COMP123_M2020_FinalExam
 {
@@ -18,7 +23,11 @@ namespace COMP123_M2020_FinalExam
         {
             InitializeComponent();
         }
-
+    /// <summary>
+    /// opens the about box when clicked
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Step 1 - instantiate an object of the AboutBox form
@@ -27,13 +36,21 @@ namespace COMP123_M2020_FinalExam
             // Step 2 - use the ShowDialog method of the aboutbox
             aboutBox.ShowDialog();
         }
-
+    /// <summary>
+    /// This method takes to the RaceAndClassform and closes the Final form
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
         private void BackButton_Click(object sender, EventArgs e)
         {
             this.PreviousForm.Show();
             this.Close();
         }
-
+    /// <summary>
+    /// This methods takes the user out the the form the application completely
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();

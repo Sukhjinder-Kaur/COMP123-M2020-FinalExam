@@ -41,7 +41,7 @@
       // BackButton
       // 
       this.BackButton.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.BackButton.Location = new System.Drawing.Point(18, 639);
+      this.BackButton.Location = new System.Drawing.Point(18, 591);
       this.BackButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
       this.BackButton.Name = "BackButton";
       this.BackButton.Size = new System.Drawing.Size(170, 62);
@@ -119,7 +119,7 @@
       // NextButton
       // 
       this.NextButton.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.NextButton.Location = new System.Drawing.Point(573, 639);
+      this.NextButton.Location = new System.Drawing.Point(561, 591);
       this.NextButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
       this.NextButton.Name = "NextButton";
       this.NextButton.Size = new System.Drawing.Size(170, 62);
@@ -133,7 +133,7 @@
       this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.White;
-      this.ClientSize = new System.Drawing.Size(756, 740);
+      this.ClientSize = new System.Drawing.Size(790, 772);
       this.ControlBox = false;
       this.Controls.Add(this.NextButton);
       this.Controls.Add(this.RaceGroupBox);

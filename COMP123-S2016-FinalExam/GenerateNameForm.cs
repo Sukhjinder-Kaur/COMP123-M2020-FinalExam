@@ -7,6 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+/*FileName: GenerateNamesForm.cs
+Author's name: Sukhjinder Kaur
+StudentID : 301087895 
+Changes Made : Added eventhandlers and GEnerateNames method which will pick the names randomly
+from the listox and assign to the text boxes
+ */
 
 namespace COMP123_M2020_FinalExam
 {

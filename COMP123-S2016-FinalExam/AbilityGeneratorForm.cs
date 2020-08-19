@@ -9,7 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
-
+/*FileName: AbilityGenerator.cs
+Author's name: Sukhjinder Kaur
+StudentID : 301087895 
+Changes Made :NA
+*/
 namespace COMP123_M2020_FinalExam
 {
     public partial class AbilityGeneratorForm : Form
@@ -27,7 +31,10 @@ namespace COMP123_M2020_FinalExam
         {
             InitializeComponent();
         }
-
+    /// <summary>
+    /// Generating random numbers to ability
+    /// </summary>
+    /// <returns></returns>
         private Int32 Roll()
         {
             // create new empty list
@@ -56,7 +63,9 @@ namespace COMP123_M2020_FinalExam
 
             return result;
         }
-
+    /// <summary>
+    /// Assigning the random numbers generated to the text boxes
+    /// </summary>
         private void GenerateAbilities()
         {
             StrengthTextBox.Text = this.Roll().ToString();
@@ -67,12 +76,20 @@ namespace COMP123_M2020_FinalExam
             CharismaTextBox.Text = this.Roll().ToString();
         }
 
-
+    /// <summary>
+    /// Generate ability method is called when clicked
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
         private void GenerateButton_Click(object sender, EventArgs e)
         {
             GenerateAbilities();
         }
-
+    /// <summary>
+    /// form load event handler
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
         private void GeneratorForm_Load(object sender, EventArgs e)
         {
             this._random = new Random(); // initialize random number object
@@ -83,7 +100,11 @@ namespace COMP123_M2020_FinalExam
             SecondAbilityComboBox.SelectedIndex = 0;
             ModifyComboBox.SelectedIndex = 0;
         }
-
+    /// <summary>
+    /// This method swaps the ability when clicked(First ability and second ability from the dropdowm menu)
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
         private void SwapButton_Click(object sender, EventArgs e)
         {
             string temporaryAbility;
@@ -164,20 +185,22 @@ namespace COMP123_M2020_FinalExam
             // Step 1 - Hide the parent form
             this.Hide();
 
-            // Step 2 - Instantiate an object for the form type
-            // you are going to next
-            RaceAndClassForm raceAndClassForm = new RaceAndClassForm();
+      // Step 2 - Instantiate an object for the form type
+      // you are going to next
+         RaceAndClassForm raceAndClassForm = new RaceAndClassForm
+      {
 
-            // Step 3 - create a property in the next form that 
-            // we will use to point to this form
-            // e.g. public AbilityGeneratorForm previousForm;
+        // Step 3 - create a property in the next form that 
+        // we will use to point to this form
+        // e.g. public AbilityGeneratorForm previousForm;
 
-            // Step 4 - point this form to the parent Form 
-            // property in the next form
-            raceAndClassForm.previousForm = this;
+        // Step 4 - point this form to the parent Form 
+        // property in the next form
+        previousForm = this
+      };
 
-            // Step 5 - Show the next form
-            raceAndClassForm.Show();
+      // Step 5 - Show the next form
+      raceAndClassForm.Show();
         }
     }
 }
